@@ -1,6 +1,8 @@
 package com.formation.velo.api.velo;
 
 
+import com.google.gson.annotations.SerializedName;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,9 +10,12 @@ import lombok.Setter;
 @Setter
 
 public class Field {
+    @SerializedName("available_bike_stands")
     private Integer availableBikeStands;
+    @SerializedName("available_bikes")
     private Integer availableBikes;
     private Integer number;
+    @SerializedName("bike_stands")
     private Integer bikeStands;
     private String status;
     private String name;

@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 
-import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -29,13 +28,9 @@ public class Station implements Serializable {
     private Double latitude;
     private Double longitude;
     private String status;
-    @SerializedName("bike_stands")
     private Integer bikeStands;
-    @SerializedName("available_bike_stands")
     private Integer availableBikeStands;
-    @SerializedName("available_bikes")
     private Integer availableBikes;
-    @SerializedName("recordid")
     private String recordId;
 
 
