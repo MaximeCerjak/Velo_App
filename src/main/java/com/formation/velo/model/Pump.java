@@ -34,7 +34,7 @@ public class Pump implements Serializable {
     private String servicesService;
     private String horairesAutomate24_24;
     private String comArmName;
-    private OffsetDateTime prixMaj;
+    // private OffsetDateTime prixMaj;
     private String pumpId;
     private String regCode;
     private String adresse;
