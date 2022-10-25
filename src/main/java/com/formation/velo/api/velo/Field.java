@@ -31,7 +31,7 @@ public class Field {
     //private String contract_name;
 
     private String status;
-    
+    private String address;
     private double[] position;
   //  private Date last_update;
 }
