@@ -21,4 +21,10 @@ public class Field {
     private String name;
     private String address;
     private Double[] position;
+
+    @SerializedName("grp_disponible")
+    private Integer grpDisponible;
+    @SerializedName("grp_nom")
+    private String grpNom;
+    private Double[] location;
 }
