@@ -1,8 +1,8 @@
 package com.formation.velo.service.impl;
 
 import com.formation.velo.model.Park;
-import com.formation.velo.api.parks.OpenDataParkingNantesClient;
-import com.formation.velo.api.parks.OpenDataParkingNantes;
+import com.formation.velo.api.OpenDataParkingNantesClient;
+import com.formation.velo.api.OpenDataVeloNantes;
 import com.formation.velo.repository.ParkRepository;
 import com.formation.velo.service.ParkService;
 import org.springframework.stereotype.Service;
@@ -63,11 +63,11 @@ public class ParkServiceImpl implements ParkService {
 
         OpenDataParkingNantesClient client = retrofit.create(OpenDataParkingNantesClient.class);
 
-        Call<OpenDataParkingNantes> openDataParkingNantesCall = client.getRecords();
+        Call<OpenDataVeloNantes> openDataParkingNantesCall = client.getRecords();
 
         try {
 
-            OpenDataParkingNantes openDataParkingNantes = openDataParkingNantesCall.execute().body();
+            OpenDataVeloNantes openDataParkingNantes = openDataParkingNantesCall.execute().body();
             System.out.printf(openDataParkingNantes.toString());
 
             //Save records dans park
