@@ -2,7 +2,6 @@ package com.formation.velo.model;
 
 
 import lombok.*;
-import org.joda.time.DateTime;
 
 import javax.persistence.*;
 import java.util.Date;
