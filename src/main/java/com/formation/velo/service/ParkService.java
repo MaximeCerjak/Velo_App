@@ -15,7 +15,7 @@ public interface ParkService {
 
     void delete(Park park);
 
-    void saveRecords();
+    void saveParkRecords();
 
     Optional<Park> findByRecordId(String recordId);
 }

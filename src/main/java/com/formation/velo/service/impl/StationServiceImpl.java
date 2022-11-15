@@ -69,7 +69,6 @@ public class StationServiceImpl implements StationService {
 
             OpenDataVeloNantes openDataVeloNantes = openDataVeloNantesCall.execute().body();
             System.out.printf(openDataVeloNantes.toString());
-           
 
             //Save records dans station
             

@@ -55,7 +55,7 @@ public class ParkServiceImpl implements ParkService {
     }
 
     @Override
-    public void getRecords() {
+    public void saveParkRecords() {
         //appel api
         String baseUrl = "https://data.nantesmetropole.fr/";
 

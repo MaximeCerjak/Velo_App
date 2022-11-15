@@ -21,7 +21,7 @@ public class ParkController {
 
     @GetMapping("parks")
     public ResponseEntity<List<Park>> getAll(){
-        parkService.saveRecords();
+        parkService.saveParkRecords();
         List<Park> parks = parkService.findAll();
 
         return ResponseEntity.ok(parks);
