@@ -12,8 +12,6 @@ import lombok.Setter;
 public class Field {
     @SerializedName("grp_disponible")
     private Integer grpDisponible;
-    @SerializedName("grp_identifiant")
-    private String grpIdentifiant;
     @SerializedName("grp_nom")
     private String grpNom;
     private Double[] location;
