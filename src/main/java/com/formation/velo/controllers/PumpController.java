@@ -22,7 +22,7 @@ public class PumpController {
 
     @GetMapping("pumps")
     public ResponseEntity<List<Pump>> getAll(){
-        pumpService.getRecords();
+        pumpService.saveRecords();
         List<Pump> pumps = pumpService.findAll();
 
         return ResponseEntity.ok(pumps);

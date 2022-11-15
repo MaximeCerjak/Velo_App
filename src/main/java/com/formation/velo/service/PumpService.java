@@ -15,7 +15,7 @@ public interface PumpService {
 
     void delete(Pump pump);
 
-    void getRecords();
+    void saveRecords();
 
     Optional<Pump> findByRecordId(String recordId);
 }
